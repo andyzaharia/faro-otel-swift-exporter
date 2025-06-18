@@ -13,7 +13,8 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/open-telemetry/opentelemetry-swift", branch: "renovate/apple-swift-nio-2.x"),
+        .package(url: "https://github.com/open-telemetry/opentelemetry-swift", .upToNextMajor(from: "1.0.0"))
+        //.package(url: "https://github.com/open-telemetry/opentelemetry-swift", branch: "renovate/apple-swift-nio-2.x"),
     ],
     targets: [
         .target(
